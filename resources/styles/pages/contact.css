@@ -1,0 +1,245 @@
+.contact {
+    padding-top: 200px;
+    padding-bottom: 140px;
+}
+
+.contact .contact_wrapper {
+    max-width: 850px;
+}
+
+/* Contact content */
+.contact .contact_content {
+    margin-bottom: 140px;
+}
+.contact .contact_content p {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 600px;
+}
+
+/* Form groups */
+.contact .contact_form .form_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+/* Labels */
+.contact .contact_form .form_group .group_label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Input styles */
+.contact .contact_form .form_group .group_input {
+    display: block;
+    color: var(--white);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(251 251 251 / 40%);
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    transition: border-color 0.4s ease;
+}
+
+/* textarea styles */
+.contact .contact_form .form_group textarea {
+    min-height: 200px;
+    resize: none;
+}
+
+/* Select group styles */
+.contact .contact_form  .form_group fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact .contact_form .form_group fieldset .select_group {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contact .contact_form .form_group fieldset .select_group .select_label {
+    color: var(--white);
+    font-size: 16px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.contact .contact_form .form_group fieldset .select_group .select_input {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.contact .contact_form .form_group fieldset .select_group .select_checkbox {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--primary-paragraph-color);
+    border-radius: 4px;
+    transition: border-color 0.4s ease;
+}
+
+/* Styles for when checkbox is selected */
+.contact .contact_form .form_group fieldset .select_group .select_input:checked ~ .select_checkbox {
+    border-color: var(--primary-color);
+}
+
+.contact .contact_form .form_group fieldset .select_group .select_input:checked ~ .select_checkbox:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    background-image: url(/resources/images/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Radio group styles */
+.contact .contact_form .form_group fieldset .radio_group {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contact .contact_form .form_group fieldset .radio_group .radio_label {
+    color: var(--white);
+    font-size: 16px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.contact .contact_form .form_group fieldset .radio_group .radio_input {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.contact .contact_form .form_group fieldset .radio_group .radio_checkbox {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--primary-paragraph-color);
+    border-radius: 50%;
+    transition: border-color 0.4s ease;
+}
+
+.contact .contact_form .form_submit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact .contact_form .form_submit .submit_success-message {
+    width: 100%;
+    color: var(--success-green);
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+@media(min-width: 768px) {
+    .contact .contact_form .form_submit  {
+        flex-wrap: nowrap;
+    }
+    .contact .contact_form .form_submit .submit_success-message {
+        width: auto;
+        margin: 0 0 0 45px;
+    }
+}
+
+/* Styles for when checkbox is selected */
+.contact .contact_form .form_group fieldset .radio_group .radio_input:checked ~ .radio_checkbox:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transform: translate(-50%,-50%);
+}
+
+.contact .contact_form .form_group fieldset .radio_group .radio_input:checked ~ .radio_checkbox {
+    border-color: var(--primary-color);
+}
+
+/* Input/textarea hover effects */
+.contact .contact_form .form_group.input_field:hover input, .contact .contact_form .form_group.input_field:hover textarea {
+    border-color: var(--white);
+}
+
+/* Input/textarea focus effects */
+.contact .contact_form .form_group.focused input, .contact .contact_form .form_group.focused textarea {
+    border-color: var(--white);a
+}
+
+/* Select and Radio focus effects */
+.contact .contact_form .form_group fieldset .select_group .select_input.focused ~ .select_checkbox, .contact .contact_form .form_group fieldset .radio_group .radio_input.focused ~ .radio_checkbox {
+    outline: 1px solid rgb(70 82 217 / 60%);
+    outline-offset: 2px;
+}
+
+/* Select and Radio hover effects */
+.contact .contact_form .form_group.checkbox_field fieldset .select_group:hover .select_checkbox, .contact .contact_form .form_group.radio_field fieldset .radio_group:hover .radio_checkbox {
+    border-color: var(--primary-color);
+}
+
+/* Submit button focus effects */
+.contact .contact_form .form_submit.focused button {
+    outline: none;
+}
+.contact .contact_form .form_submit.focused button::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 1px solid rgb(70 82 217 / 60%);
+}
+/* Form errors */
+.contact .contact_form .form_group .group_error {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.contact .contact_form .form_group .group_error svg {
+    fill: var(--error-red);
+}
+
+.contact .contact_form .form_group .group_error .error_message {
+    color: var(--error-red);
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+/* Select and Radio responsiveness */
+@media(min-width: 768px) {
+    .contact .contact_form .form_group fieldset .select_group, .contact .contact_form .form_group fieldset .radio_group {
+        width: 50%;
+    }
+}
+@media(min-width: 1024px) {
+    .contact .contact_form .form_group fieldset .select_group, .contact .contact_form .form_group fieldset .radio_group {
+        width: 25%;
+    }
+}

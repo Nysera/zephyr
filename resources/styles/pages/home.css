@@ -1,0 +1,16 @@
+/* Section - Portfolio */
+.portfolio {
+    padding-bottom: 140px;
+}
+
+/* Portfolio content */
+.portfolio .portfolio_content {
+    margin-bottom: 45px;
+}
+
+/* Center portfolio content block after 768px + */
+@media(min-width: 768px) {
+    .portfolio .portfolio_content {
+        text-align: center;
+    }
+}

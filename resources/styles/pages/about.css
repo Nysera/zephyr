@@ -1,0 +1,33 @@
+/* Section - Our Team */
+.our-team {
+    text-align: center;
+    padding-bottom: 140px;
+}
+
+.our-team_images {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -6px -6px 45px -6px;
+}
+
+.our-team_images .images_image {
+    width: 50%;
+    height: 100%;
+    padding: 6px;
+}
+
+.our-team_images .images_image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.our-team_content .content_buttons {
+    margin-top: 45px;
+}
+
+@media(min-width: 768px) {
+    .our-team_images .images_image {
+        width: 25%;
+    }
+}

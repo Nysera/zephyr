@@ -1,0 +1,103 @@
+/* Box-sizing */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    color: var(--primary-paragraph-color);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--background-dark);
+    padding: 0;
+    margin: 0;
+}
+
+/* sections */
+section {
+    position: relative;
+}
+
+/* Anchor element */
+a {
+    color: var(--white);
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    /* transition: color 0.4s ease; */
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: var(--layout-max-width);
+    padding: var(--layout-gutter-medium);
+    margin: 0 auto;
+}
+
+/* Image element */
+img {
+    max-width: 100%;
+    height: auto;
+ }
+
+ /* Sub heading */
+ .sub-heading {
+    display: block;
+    color: var(--primary-color);
+    font-family: inherit;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 4px;
+ }
+
+ /* Class for stopping scrolling */
+ .no-scroll {
+    overflow: hidden;
+ }
+
+ /* * */
+ /* Hero circles */
+.circles {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 560px;
+    height: 500px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circles .circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circles .circle:nth-child(1) {
+    top: 0;
+    right: 22%;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(48 58 148 / 60%);
+}
+
+.circles .circle:nth-child(2) {
+    top: 33%;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(61 68 147 / 60%);
+}
+
+.circles .circle:nth-child(3) {
+    top: 42%;
+    right: 14%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(70 82 217 / 60%);
+}

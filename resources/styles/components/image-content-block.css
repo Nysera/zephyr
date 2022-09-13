@@ -1,0 +1,79 @@
+.image-content-block {
+    padding-bottom: 140px;
+}
+
+.image-content-block .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Image content block image */
+.image-content-block .image-content-block_image {
+    width: 100%;
+    padding-bottom: 45px;
+}
+
+.image-content-block .image-content-block_image img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Image content block content */
+.image-content-block .image-content-block_content {
+    width: 100%;
+}
+
+.image-content-block .image-content-block_content .content_buttons {
+    margin-top: 45px;
+}
+
+/* Add negative margin on image */
+.image-content-block .image-content-block_image img.negative-top {
+    margin-top: -25px;
+}
+
+/* Change to 2 column layout */
+@media(min-width: 1024px) {
+    .image-content-block .image-content-block_image {
+        width: 50%;
+        padding: 0;
+    }
+    .image-content-block .image-content-block_content {
+        width: 50%;
+    }
+}
+
+/* Image-content-block-right */
+@media(min-width: 1024px) {
+    .image-content-block.content-right .image-content-block_image {
+        padding: 0 6% 0 0;
+    }
+}
+
+/* Image-content-block-left */
+@media(min-width: 1024px) {
+    .image-content-block.content-left .image-content-block_image {
+        order: 2;
+        width: 50%;
+        padding: 0 0 0 6%;
+    }
+    .image-content-block.content-left .image-content-block_content {
+        order: 1;
+        width: 50%;
+    }
+}
+
+
+/* Image responsiveness */
+@media(min-width: 640px) {
+    .image-content-block .image-content-block_image img {
+        max-height: 56vw;
+    }
+ }
+
+ @media(min-width: 1024px) {
+    .image-content-block .image-content-block_image img {
+        max-height: 80vh;
+    }
+ }

@@ -1,0 +1,70 @@
+/* Button default styles */
+.button,
+.site-header .site-header_nav ul li a.button-primary {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--primary-color);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 13px 40px;
+    margin: 0;
+    cursor: pointer;
+    transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+}
+
+/* Default svg styles for in button */
+.button svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    fill: var(--primary-color);
+    margin-left: 8px;
+    transition: fill 0.4s ease;
+}
+
+/* Primary button styles */
+.button-primary,
+.site-header .site-header_nav ul li a.button-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Primary button hover */
+.button-primary:hover,
+.site-header .site-header_nav ul li a.button-primary:hover {
+    color: var(--white);
+    background: var(--primary-color);
+}
+
+.button-primary:hover svg,
+.site-header .site-header_nav ul li a.button-primary:hover svg {
+    fill: var(--white);
+}
+
+/* Secondary button */
+.button-secondary {
+    color: var(--button-typography-dark);
+    background-color: var(--white);
+}
+
+.button-secondary svg {
+    fill: var(--button-typography-dark);
+}
+
+/* Secondary button hover */
+.button-secondary:hover {
+    color: var(--white);
+    border-color: var(--white);
+    background-color: transparent;
+}
+
+.button-secondary:hover svg {
+    fill: var(--white);
+}

@@ -1,0 +1,69 @@
+/* Portfolio grid*/
+.portfolio .portfolio_grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.portfolio .portfolio_grid .grid_item {
+    display: flex;
+    width: calc(100% - 40px);
+    margin: 20px;
+}
+
+.portfolio .portfolio_grid .grid_item a {
+    display: flex;
+}
+
+.portfolio .portfolio_grid .grid_item .item_wrapper {
+    background-color: var(--background-dark-lighter);
+    padding: 20px;
+}
+
+.portfolio .portfolio_grid .grid_item .item_wrapper .item_image {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.portfolio .portfolio_grid .grid_item .item_wrapper .item_image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+}
+
+.portfolio .portfolio_grid .grid_item .item_wrapper .item_desc .desc_type {
+    color: var(--primary-color);
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+
+.portfolio .portfolio_grid .grid_item .item_wrapper .item_desc .desc_client {
+    color: var(--primary-paragraph-color);
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.portfolio .portfolio_grid .grid_item .item_wrapper .item_desc .desc_title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 24px;
+}
+
+/* Hover animations */
+.portfolio .portfolio_grid .grid_item a:hover .item_wrapper .item_image img {
+    transform: scale(1.05);
+}
+
+/* Grid responsiveness */
+@media(min-width: 768px) {
+    .portfolio .portfolio_grid .grid_item {
+        width: calc(50% - 40px);
+    }
+}
+
+@media(min-width:1024px) {
+    .portfolio .portfolio_grid.lg-w-33 .grid_item {
+        width: calc(33% - 40px);
+    }
+}

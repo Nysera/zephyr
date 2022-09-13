@@ -1,0 +1,15 @@
+/* Variables */
+:root {
+
+    --primary-color: #4652d9;
+    --primary-heading-color: var(--white);
+    --primary-paragraph-color: #9ea3a7;
+    --white: #fbfbfb;
+    --background-dark: #060f14;
+    --background-dark-lighter: #161c20;
+    --button-typography-dark: #30393e;
+    --error-red: #e15d5d;
+    --success-green: #18bd18;
+    --layout-gutter-medium: 0 40px;
+    --layout-max-width: 1450px;
+}

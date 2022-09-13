@@ -1,0 +1,19 @@
+/*
+    NOTE: using import is only for development, if this was a production product I would use a module bundler instead as using import isn't recommended due to various reasons.
+*/
+
+/* Import common styles */
+@import "common/normalize.css";
+@import "common/variables.css";
+@import "common/global.css";
+@import "common/typography.css";
+
+/* Import layout styles*/
+@import "layout/header.css";
+@import "layout/footer.css";
+
+/* Import component styles*/
+@import "components/buttons.css";
+@import "components/hero.css";
+@import "components/image-content-block.css";
+@import "components/portfolio-grid.css";
