@@ -101,7 +101,6 @@ const formValidation = function(form) {
             validations[index] = validateFormGroupInputs(formGroup);
         });
 
-        console.log(validations.every(Boolean));
         return validations.every(Boolean) === true ? true : false;
     };
 
@@ -172,7 +171,6 @@ const formValidation = function(form) {
             setMessage(input, "Please select your required service/s.", "add");
             return false;
         }
-        console.log(validations);
     };
 
     const validateRadioInputType = function(formGroup) {
