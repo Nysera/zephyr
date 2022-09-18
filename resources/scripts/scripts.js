@@ -106,7 +106,7 @@ const formValidation = function(form) {
 
     const validateFormGroupInputs = function(formGroup) {
         const input = formGroup.querySelector(".input");
-        const inputType = formGroup.querySelector(".input").getAttribute("type");
+        const inputType = input.getAttribute("type");
 
         let isValid = false;
 
