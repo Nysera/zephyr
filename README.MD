@@ -1,7 +1,10 @@
 # Zephyr Digital Agency Website
 Zephyr is my take on a digital agency website which I created for the CS50 week 8 problem set.
 
-## The project requirements
+## Live Preview
+A live preview of the project can be found [here](https://nysera.github.io/zephyr-digital-agency/).
+
+### The project requirements
 The requirements for the CS50 week 8 problem set were pretty basic and as follows:
 1. Basic HTML, CSS and Javascript
 2. Have at least four different pages
